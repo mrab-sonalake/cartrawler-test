@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("/fonts/OpenSans/OpenSans-SemiBold.ttf") format("truetype");
+}
+
+* {
+  --primary-color: #e6356f;
+  --primary-border-color: #e6356f;
+
+  --text-color: #333333;
+
+  --grey-color: #efefef;
+  --white-color: #ffffff;
+
+  --container-border-color: #c7c7cd;
+
+  font-family: OpenSans-Regular, Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Typography */
+.title-xl {
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  font-size: 3rem;
+  line-height: 4.063rem;
+}
+
+.title-l {
+  font-family: OpenSans-Bold, Arial, sans-serif;
+  font-size: 2.625rem;
+  line-height: 3.563rem;
+}
+
+.title-m {
+  font-family: OpenSans-SemiBold, Arial, sans-serif;
+  font-size: 2.25rem;
+  line-height: 3.063rem;
+}
+
+.title-s {
+  font-family: OpenSans-SemiBold, Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 2.688rem;
+}
+
+.subtitle-xl {
+  font-family: OpenSans-SemiBold, Arial, sans-serif;
+  font-size: 1.75rem;
+  line-height: 2.375rem;
+}
+
+.subtitle-l {
+  font-family: OpenSans-SemiBold, Arial, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.063rem;
+}
+
+.subtitle-m {
+  font-family: OpenSans-SemiBold, Arial, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.688rem;
+}
+
+.subtitle-s {
+  font-family: OpenSans-SemiBold, Arial, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+.body-l {
+  font-family: OpenSans-Regular, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+
+a,
+p,
+button,
+.body-m {
+  font-family: OpenSans-Regular, Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.188rem;
+}
+
+.body-s {
+  font-family: OpenSans-Regular, Arial, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.063rem;
+}
+/* End of typography */
+
+.pickupInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.pickupInfoLocation {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.vehicleList {
+  height: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 3% 7%;
+  margin-top: 3.5%;
+}
+
+.vehicleCard {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 100%;
+  padding: 0.5em 1.25em;
+  border: 1px solid var(--container-border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.vehicleCard:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s linear;
+}
+
+.infoDetail {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0.313rem 0;
+}
+
+.rentalCompany {
+  width: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 430px) {
+  .pickupInfoContainer {
+    width: 100%;
+  }
+
+  .pickupInfo {
+    max-width: 45%;
+  }
+
+  .vehicleList {
+    grid-template-columns: auto;
+    gap: 0.5%;
+    margin: 1.5em auto;
+  }
+
+  .vehicleCard {
+    width: 100%;
+  }
+
+  .rentalCompany {
+    width: 60%;
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "rentalInfo": {
+    "pickUp": {
+      "date": "2020-03-22T10:00:00Z",
+      "location": "Las Vegas - Airport"
+    },
+    "return": {
+      "date": "2020-04-06T10:00:00Z",
+      "location": "Las Vegas - Airport"
+    }
+  },
+  "availabilities": [
+    {
+      "id": "randomUUID",
+      "status": "Available",
+      "vehicle": {
+        "hasAirConditioning": true,
+        "transmissionType": "Automatic",
+        "fuelType": "Petrol",
+        "driveType": "Unspecified",
+        "passengerQuantity": 5,
+        "baggageQuantity": 3,
+        "code": "IFAR",
+        "codeContext": "CARTRAWLER",
+        "doorCount": 5,
+        "vehicleMakeAndModel": "Toyota Rav4 or similar",
+        "pictureURL": "https://ctimg-fleet.cartrawler.com/toyota/rav4/primary.png?auto=format&w=600"
+      },
+      "totalCharge": {
+        "rateTotalAmount": "878.98",
+        "estimatedTotalAmount": "878.98",
+        "currencyCode": "CAD"
+      },
+      "vendor": {
+        "code": "125",
+        "name": "ALAMO"
+      }
+    }
+  ]
+}
